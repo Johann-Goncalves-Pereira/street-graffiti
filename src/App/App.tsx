@@ -5,6 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Header from "./Components/Header/Header";
 
+//& Style
+import styles from "./App.module.scss";
+
 function App() {
   return (
     <BrowserRouter>

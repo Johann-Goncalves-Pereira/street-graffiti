@@ -5,15 +5,14 @@
 @function hsl($h, $s, $l) {
 	@return unquote("hsl(#{$h}, #{$s}, #{$l})");
 }
-
 $colors: (
 	surface: (
-		0: hsl(0, 0%, 17%),
+		0: hsl(0, 0%, 9%),
 		1: hsl(0, 0%, 96%),
 	),
 	text: (
-		0: hsl(0, 0%, 98%),
-		1: hsl(0, 0%, 13%),
+		0: hsl(0, 0%, 99%),
+		1: hsl(0, 0%, 1%),
 	),
 	brand: (
 		0: hsl(39, 100%, 50%),

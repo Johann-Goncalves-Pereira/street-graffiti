@@ -1,20 +1,5 @@
 @use "../abstracts/" as *;
 
-@mixin fonts($fontName, $fontPath) {
-	@font-face {
-		font-family: $fontName;
-		src: url("../../../assets/fonts/#{$fontPath}");
-	}
-}
-
-@include fonts(FatWandals, "fat_wandals/FatWandals.ttf");
-@include fonts(FatWandalsAlt, "fat_wandals/FatWandalsAlt.ttf");
-@include fonts(FatWandalsElements, "fat_wandals/FatWandalsElement");
-@include fonts(grizzly, "grizzly_attack/Grizzly-Attack.ttf");
-
-//! For some reason this font wont decode
-// @include fonts(macbeth, "Macbeth-Reguler.ttf");
-
 body {
 	color: var(--clr-text-0);
 	background: var(--clr-surface-0);
@@ -26,5 +11,9 @@ body {
 	position: absolute;
 	inset: 0;
 
-	font-family: "grizzly", "FatWandals";
+	display: grid;
+	grid-template-rows: min-content auto;
+
+	// font-family: "grizzly", "FatWandals";
+	font-family: "Poppins", sans-serif;
 }
