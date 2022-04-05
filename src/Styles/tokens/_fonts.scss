@@ -1,0 +1,16 @@
+@mixin fonts($fontName, $fontPath) {
+	@font-face {
+		font-family: $fontName;
+		src: url("../../../assets/fonts/#{$fontPath}");
+	}
+}
+
+@include fonts(FatWandals, "fat_wandals/FatWandals.ttf");
+@include fonts(FatWandalsAlt, "fat_wandals/FatWandalsAlt.ttf");
+@include fonts(FatWandalsElements, "fat_wandals/FatWandalsElement");
+@include fonts(grizzly, "grizzly_attack/Grizzly-Attack.ttf");
+
+:root {
+	--font-fat-wandals: FatWandals;
+	--font-grizzly: grizzly;
+}
