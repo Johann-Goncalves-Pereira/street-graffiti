@@ -21,11 +21,14 @@
 
 html {
 	height: 100%;
+
+	body {
+		line-height: calc(2px + 2ex);
+	}
 }
 
 body {
 	min-height: Max(100%, 100vh);
-	line-height: calc(2px + 2ex);
 }
 
 //? make sure to set some focus styles for accessibility
@@ -47,7 +50,7 @@ body {
 
 	:is(&::before, &::after) {
 		content: "";
-		content: none;
+		// content: none;
 	}
 }
 
@@ -84,8 +87,8 @@ textarea {
 //? Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
 :is(audio, canvas, video) {
 	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	// *display: inline;
+	// *zoom: 1;
 	max-width: 100%;
 }
 
@@ -156,7 +159,7 @@ legend {
 	border: 0; /* 1 */
 	padding: 0;
 	white-space: normal; /* 2 */
-	*margin-left: -7px; /* 3 */
+	// *margin-left: -7px; /* 3 */
 }
 
 //?  1. Correct font size not being inherited in all browsers.
@@ -167,7 +170,7 @@ legend {
 	font-size: 100%; /* 1 */
 	margin: 0; /* 2 */
 	vertical-align: baseline; /* 3 */
-	*vertical-align: middle; /* 3 */
+	// *vertical-align: middle; /* 3 */
 }
 
 //? Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -188,7 +191,7 @@ legend {
 :is(button, html input[type="button"], input[type="reset"], input[type="submit"]) {
 	-webkit-appearance: button; /* 2 */
 	cursor: pointer; /* 3 */
-	*overflow: visible; /* 4 */
+	// *overflow: visible; /* 4 */
 }
 
 //? Re-set default cursor for disabled elements.
@@ -204,8 +207,8 @@ html input[disabled] {
 :is(input[type="checkbox"], input[type="radio"]) {
 	box-sizing: border-box; /* 1 */
 	padding: 0; /* 2 */
-	*height: 13px; /* 3 */
-	*width: 13px; /* 3 */
+	// *height: 13px; /* 3 */
+	// *width: 13px; /* 3 */
 }
 
 //? 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
