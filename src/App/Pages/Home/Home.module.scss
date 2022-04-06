@@ -7,8 +7,8 @@
 		font-family: var(--font-grizzly);
 		font-size: 10rem;
 		text-transform: uppercase;
-		color: var(--clr-brand-0);
 		color: var(--clr-text-0);
+		user-select: none;
 
 		&::before,
 		&::after {
