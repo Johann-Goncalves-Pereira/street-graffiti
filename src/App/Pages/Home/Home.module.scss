@@ -3,8 +3,37 @@
 	place-content: center;
 
 	h1 {
+		position: relative;
 		font-family: var(--font-grizzly);
 		font-size: 10rem;
 		text-transform: uppercase;
+		color: var(--clr-brand-0);
+		color: var(--clr-text-0);
+
+		&::before,
+		&::after {
+			$s: 30rem;
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 50%;
+
+			transform: translate(50%, -50%);
+
+			height: $s;
+			width: $s;
+
+			border-radius: var(--radius-round);
+		}
+
+		&::before {
+			background-color: var(--clr-surface-1);
+			mix-blend-mode: difference;
+		}
+
+		&::after {
+			background-color: var(--clr-brand-0);
+			mix-blend-mode: multiply;
+		}
 	}
 }
