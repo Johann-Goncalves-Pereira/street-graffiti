@@ -4,11 +4,12 @@
 
 	h1 {
 		position: relative;
+		color: var(--clr-text-0);
+		text-transform: uppercase;
 		font-family: var(--font-grizzly);
 		font-size: 10rem;
-		text-transform: uppercase;
-		color: var(--clr-text-0);
 		user-select: none;
+		z-index: 0;
 
 		&::before,
 		&::after {
@@ -27,13 +28,15 @@
 		}
 
 		&::before {
-			background-color: var(--clr-surface-1);
+			background-color: var(--clr-text-0);
 			mix-blend-mode: difference;
+			z-index: 1;
 		}
 
 		&::after {
 			background-color: var(--clr-brand-0);
 			mix-blend-mode: multiply;
+			z-index: 2;
 		}
 	}
 }

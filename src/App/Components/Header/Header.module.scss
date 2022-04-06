@@ -1,6 +1,9 @@
+@use "../../../Styles/abstracts/" as *;
+
 .header {
 	display: grid;
 	grid-template-columns: 3rem auto min-content;
+
 	align-items: center;
 	padding: 0.25rem 2rem;
 
@@ -13,8 +16,13 @@
 .nav {
 	display: flex;
 	align-items: center;
+	flex-direction: column;
 	justify-content: flex-end;
 	gap: 1rem;
+
+	@include md(lg) {
+		flex-direction: row;
+	}
 
 	&__list {
 		display: contents;
