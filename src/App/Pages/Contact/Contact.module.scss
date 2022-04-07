@@ -1,0 +1,103 @@
+@use "../../../Styles/main.scss" as *;
+
+.main {
+	display: grid;
+	justify-content: center;
+	gap: Max(1.5rem, 5vw);
+
+	padding-block: 5rem;
+
+	@include md(xl) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.wrapper {
+	display: grid;
+	margin: auto 0 auto auto;
+	padding-bottom: 6rem;
+
+	&__heading,
+	&__text {
+		text-align: center;
+	}
+
+	@include md(xl) {
+		&__heading,
+		&__text {
+			text-align: left;
+			text-align: start;
+		}
+	}
+
+	&__heading {
+		font-family: var(--font-grizzly);
+		font-size: 6rem;
+		color: var(--clr-brand-0);
+		margin-bottom: 1rem;
+	}
+
+	&__text {
+		em {
+			color: var(--clr-brand-0);
+			font-style: normal;
+		}
+	}
+}
+
+.form {
+	display: grid;
+	grid-template-columns: repeat(2, 16rem);
+	gap: 1.5rem;
+
+	margin: auto auto auto 0;
+
+	&__input,
+	&__textarea {
+		border: 1px solid var(--clr-surface-1);
+		padding: 0.5rem 0.75rem;
+
+		background-color: transparent;
+	}
+
+	&__input:first-child,
+	&__textarea,
+	.button {
+		grid-column: 1 / span 2;
+	}
+
+	&__input {
+		&:focus,
+		&:focus-visible,
+		&:active {
+			border-color: var(--clr-brand-0);
+		}
+
+		&:first-child {
+			border-top-left-radius: var(--radius-2);
+			border-top-right-radius: var(--radius-2);
+		}
+	}
+
+	&__textarea {
+		border-bottom-left-radius: var(--radius-2);
+		border-bottom-right-radius: var(--radius-2);
+		min-height: 7rem;
+		max-height: 20vh;
+	}
+}
+
+.button {
+	border-radius: var(--radius-round);
+	padding-inline: 2rem;
+	padding-block: 0.75rem;
+	margin-inline: auto;
+
+	width: max-content;
+	height: max-content;
+
+	background-color: var(--clr-brand-0);
+
+	font-weight: 700;
+	text-transform: uppercase;
+}
