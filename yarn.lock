@@ -250,6 +250,16 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
+"@brillout/json-s@^0.4.3":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@brillout/json-s/-/json-s-0.4.5.tgz#5ce606b263d5016206ae582f5f16a0178b3ff39b"
+  integrity sha512-hiB4LVW4aFoxvJg//93/B1IlnVfVG15RnRFug+mAaCeM7LZzlQV4anAM4y4VzMVPShUCdbx208tnnb8N4I8dvg==
+
+"@brillout/libassert@^0.5.4":
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/@brillout/libassert/-/libassert-0.5.4.tgz#3bccfe15e8b0d16db4a63b6a5d312a1dfae27e7c"
+  integrity sha512-ayIUIOFM98wqgMnCquDlzENRBLmJ82hsKnosaaG2U4+ijUVwi1E2LzD0TwhAC8G7vBqp0BbT172mfTXBVMIw5A==
+
 "@csstools/postcss-color-function@^1.0.3":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@csstools/postcss-color-function/-/postcss-color-function-1.1.0.tgz"
@@ -554,6 +564,11 @@ browserslist@^4.0.0, browserslist@^4.16.1, browserslist@^4.16.6, browserslist@^4
     escalade "^3.1.1"
     node-releases "^2.0.2"
     picocolors "^1.0.0"
+
+cac@^6.7.12:
+  version "6.7.12"
+  resolved "https://registry.yarnpkg.com/cac/-/cac-6.7.12.tgz#6fb5ea2ff50bd01490dbda497f4ae75a99415193"
+  integrity sha512-rM7E2ygtMkJqD9c7WnFU6fruFcN3xe4FM5yUmgxhZzIKJk4uHl9U/fhwdajGFQbQuv43FAUo1Fe8gX/oIKDeSA==
 
 callsites@^3.0.0:
   version "3.1.0"
@@ -966,6 +981,11 @@ error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
+es-module-lexer@^0.10.0:
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-0.10.5.tgz#06f76d51fa53b1f78e3bd8bb36dd275eda2fdd53"
+  integrity sha512-+7IwY/kiGAacQfY+YBhKMvEmyAJnw5grTUgjG85Pe7vcUI/6b7pZjZG8nQ7+48YhzEAEqrEgD2dCz/JIK+AYvw==
+
 esbuild-android-64@0.14.31:
   version "0.14.31"
   resolved "https://registry.yarnpkg.com/esbuild-android-64/-/esbuild-android-64-0.14.31.tgz#4b7dfbbeee62b3495ba78220b85fb590eb68d5bf"
@@ -1304,6 +1324,11 @@ json5@^2.1.2:
   resolved "https://registry.npmjs.org/json5/-/json5-2.2.1.tgz"
   integrity sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==
 
+kolorist@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/kolorist/-/kolorist-1.5.1.tgz#c3d66dc4fabde4f6b7faa6efda84c00491f9e52b"
+  integrity sha512-lxpCM3HTvquGxKGzHeknB/sUjuVoUElLlfYnXZT73K8geR9jQbroGlSCFBax9/0mpGoD3kzcMLnOlGQPJJNyqQ==
+
 laggard@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/laggard/-/laggard-2.0.1.tgz"
@@ -1465,6 +1490,13 @@ open-props@^1.3.12:
   version "1.3.12"
   resolved "https://registry.npmjs.org/open-props/-/open-props-1.3.12.tgz"
   integrity sha512-/Jc0t9bjHpuh6SsSzUuRJsspTaPt6WcC4OqPe5r1KJcsqdYj6QAXv+OgpmP2Tw53K+746JWo26Y+IdwBZXo1ww==
+
+p-limit@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-3.1.0.tgz#e1daccbe78d0d1388ca18c64fea38e3e57e3706b"
+  integrity sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==
+  dependencies:
+    yocto-queue "^0.1.0"
 
 parent-module@^1.0.0:
   version "1.0.1"
@@ -2591,6 +2623,25 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2:
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
+vite-plugin-import-build@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/vite-plugin-import-build/-/vite-plugin-import-build-0.1.3.tgz#2d5ac0f0a684776f16837e2aa092e8508d1a242f"
+  integrity sha512-N4oRY6Mv5l1qVODcAw1W6Xw1hiW9y8uVs6vqBy0dCTayCu5/7IRmUmjpc+wrBdSS2b/cZYkLX/xHgFyjXlaXtg==
+
+vite-plugin-ssr@^0.3.61:
+  version "0.3.61"
+  resolved "https://registry.yarnpkg.com/vite-plugin-ssr/-/vite-plugin-ssr-0.3.61.tgz#5430de9d8783d3be9027ba40352bffc97be47669"
+  integrity sha512-lnMf86VhLlUVhFvGWvYL8+ZA1lkT3uvW4tFF2whyOEqxCFI2Y2l9Y/D3f8yloIkflJbu8Lz9SuyNOZWAagw+Sw==
+  dependencies:
+    "@brillout/json-s" "^0.4.3"
+    "@brillout/libassert" "^0.5.4"
+    cac "^6.7.12"
+    es-module-lexer "^0.10.0"
+    fast-glob "^3.2.11"
+    kolorist "^1.5.1"
+    p-limit "^3.1.0"
+    vite-plugin-import-build "^0.1.3"
+
 vite@^2.9.0:
   version "2.9.1"
   resolved "https://registry.npmjs.org/vite/-/vite-2.9.1.tgz"
@@ -2649,3 +2700,8 @@ yargs@^16.2.0:
     string-width "^4.2.0"
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
+
+yocto-queue@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
+  integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
