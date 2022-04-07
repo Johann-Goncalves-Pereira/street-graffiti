@@ -1,8 +1,10 @@
-import { defineConfig } from "vite";
-// import ViteFonts from "vite-plugin-fonts";
+import { UserConfig } from "vite";
+import ssr from "vite-plugin-ssr/plugin";
 import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-});
+const config: UserConfig = {
+  plugins: [react(), ssr()],
+};
+
+export default config;
