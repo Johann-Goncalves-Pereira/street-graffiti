@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 
-body {
+html body {
 	color: var(--clr-text-0);
 	background: var(--clr-surface-0);
 }
@@ -11,9 +11,12 @@ body {
 	position: absolute;
 	inset: 0;
 
-	display: grid;
-	grid-template-rows: min-content auto;
+	display: flex;
+	flex-direction: column;
 
-	// font-family: "grizzly", "FatWandals";
 	font-family: "Poppins", sans-serif;
+}
+
+main {
+	flex: 1;
 }
