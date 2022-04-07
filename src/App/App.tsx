@@ -2,11 +2,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //& Page Elements
-import Home from "./Pages/Home/Home";
 import Header from "./Components/Header/Header";
 
-//& Style
-import styles from "./App.module.scss";
+//& Pages
+import Home from "./Pages/Home/Home";
+import Contact from "./Pages/Contact/Contact";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
