@@ -29,7 +29,7 @@
 		display: contents;
 
 		&__item {
-			&:first-of-type {
+			&:nth-of-type(2) {
 				color: var(--clr-brand-0);
 			}
 		}

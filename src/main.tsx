@@ -4,8 +4,8 @@ import { createRoot } from "react-dom/client";
 import App from "./App/App";
 
 //& Base Styles, all pages;
-// const stylesL01 = import.meta.globEager("./Styles/**/*.scss");
-import "./Styles/_index.scss";
+const styles = import.meta.globEager("./Styles/**/*.scss");
+// import "./Styles/_index.scss";
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);

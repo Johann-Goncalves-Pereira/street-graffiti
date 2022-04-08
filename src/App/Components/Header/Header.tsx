@@ -25,6 +25,9 @@ function Header() {
   const location = useLocation();
   // console.log(location.pathname);
 
+  // if (location.pathname)  {
+  // }
+
   return (
     <header className={styles.header}>
       <img
