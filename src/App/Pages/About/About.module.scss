@@ -1,15 +1,31 @@
+@use "../../../Styles/abstracts/" as *;
+
 .main {
 	position: absolute;
 	top: 0;
 	inset-inline: 0;
+	z-index: var(--layer-1);
 }
 
-.containerOne {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.container {
+	display: grid;
+	grid-template-columns: 4fr 3fr;
 	gap: 1rem;
+	height: 100vh;
+}
 
-	.text {
+.photo {
+	height: inherit;
+
+	@include circles-mixin-effect($size: 8
+	0%, $bottom: 2rem);
+
+	&__img {
+		display: block;
+
+		margin: auto;
+
+		height: inherit;
+		clip-path: polygon(33% 0, 95% 13%, 76% 24%, 100% 39%, 80% 70%, 83% 93%, 42% 63%, 23% 81%, 26% 40%, 10% 21%);
 	}
 }
