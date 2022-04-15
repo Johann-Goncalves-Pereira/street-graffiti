@@ -1,15 +1,84 @@
+@use "../../../Styles/abstracts/" as *;
+
 .main {
 	position: absolute;
 	top: 0;
 	inset-inline: 0;
+	z-index: var(--layer-1);
 }
 
-.containerOne {
-	display: flex;
+.container {
+	display: grid;
+	grid-template-columns: 4fr 3fr;
+	grid-template-areas: "photo info";
 	align-items: center;
-	justify-content: center;
 	gap: 1rem;
 
-	.text {
+	padding-inline: 4rem;
+
+	height: 100vh;
+
+	overflow: hidden;
+
+	&:nth-of-type(2n) {
+		grid-template-columns: 3fr 4fr;
+
+		grid-template-areas: "info photo";
+
+		background-color: var(--clr-surface-1);
+		color: var(--clr-text-1);
+	}
+}
+
+.photo {
+	grid-area: photo;
+	height: inherit;
+
+	@include circles-mixin-effect($size: #{"min(80%,35rem)"}, $bottom: -3rem);
+
+	&__img {
+		display: block;
+
+		margin: auto;
+
+		height: inherit;
+
+		clip-path: polygon(33% 4%, 95% 13%, 76% 24%, 100% 39%, 80% 70%, 83% 93%, 42% 63%, 23% 81%, 26% 40%, 10% 21%);
+	}
+}
+
+.info {
+	grid-area: info;
+	margin-top: 10rem;
+
+	&__title {
+		margin-bottom: 1rem;
+
+		font-family: var(--font-grizzly);
+		font-size: 5rem;
+		line-height: 38px;
+		text-transform: uppercase;
+		user-select: none;
+
+		&__second {
+			display: block;
+			text-align: var(--end, end);
+		}
+	}
+
+	&__btm {
+		display: block;
+		transform: rotate(180deg);
+
+		padding: 3rem;
+		margin-top: 1rem;
+
+		width: 100%;
+
+		font-family: var(--font-grizzly);
+		font-size: 5rem;
+		line-height: 38px;
+		text-transform: uppercase;
+		user-select: none;
 	}
 }

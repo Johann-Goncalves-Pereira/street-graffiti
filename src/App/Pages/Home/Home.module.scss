@@ -1,42 +1,17 @@
+@use "../../../Styles/abstracts/" as *;
+
 .main {
 	display: grid;
 	place-content: center;
+	flex: 1;
 
 	h1 {
-		position: relative;
 		color: var(--clr-text-0);
 		text-transform: uppercase;
 		font-family: var(--font-grizzly);
 		font-size: 10rem;
 		user-select: none;
-		z-index: 0;
 
-		&::before,
-		&::after {
-			$s: 30rem;
-			content: "";
-			position: absolute;
-			top: 50%;
-			right: 50%;
-
-			transform: translate(50%, -50%);
-
-			height: $s;
-			width: $s;
-
-			border-radius: var(--radius-round);
-		}
-
-		&::before {
-			background-color: var(--clr-text-0);
-			mix-blend-mode: difference;
-			z-index: 1;
-		}
-
-		&::after {
-			background-color: var(--clr-brand-0);
-			mix-blend-mode: multiply;
-			z-index: 2;
-		}
+		@include circles-mixin-effect;
 	}
 }

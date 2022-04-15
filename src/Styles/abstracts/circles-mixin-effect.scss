@@ -1,0 +1,68 @@
+$default-corner-lt: 50%;
+$default-corner-rb: auto;
+
+@mixin circles-mixin-effect(
+	$size: 30rem,
+	$top: $default-corner-lt,
+	$left: $default-corner-lt,
+	$right: $default-corner-rb,
+	$bottom: $default-corner-rb
+) {
+	// Make the content a staking content;
+	position: relative;
+	z-index: var(--layer-0, 0);
+
+	&::before,
+	&::after {
+		//? Check all default values;
+		$check-t: $top == $default-corner-lt;
+		$check-l: $left == $default-corner-lt;
+		$check-r: $right == $default-corner-rb;
+		$check-b: $bottom == $default-corner-rb;
+
+		$check-tl: $check-t and $check-l;
+		$check-rb: $check-r and $check-b;
+
+		$check-all: $check-tl and $check-rb;
+
+		content: "";
+		position: absolute;
+
+		@if $check-b != true {
+			bottom: $bottom;
+		} @else {
+			top: $top;
+		}
+
+		@if $check-r != true {
+			right: $right;
+		} @else {
+			left: $left;
+		}
+
+		@if $check-all {
+			transform: translate(-$default-corner-lt, -$default-corner-lt);
+		} @else if $check-t and $check-b {
+			transform: translateY(-50%);
+		} @else if $check-l and $check-r {
+			transform: translateX(-50%);
+		}
+
+		width: $size;
+		aspect-ratio: 1;
+
+		border-radius: var(--radius-round);
+	}
+
+	&::before {
+		background-color: var(--clr-text-0);
+		mix-blend-mode: difference;
+		z-index: var(--layer-1, 1);
+	}
+
+	&::after {
+		background-color: var(--clr-brand-0);
+		mix-blend-mode: multiply;
+		z-index: var(--layer-2, 2);
+	}
+}
