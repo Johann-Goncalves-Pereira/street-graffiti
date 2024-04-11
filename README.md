@@ -1,4 +1,10 @@
 # Graffiti
+
+<img width="1780" alt="image" src="https://github.com/Johann-Goncalves-Pereira/street-graffiti/assets/62612685/6490d7c9-1bcd-42a3-b26e-4cd645fc6f36">
+
+
+---
+
 This project was made for the purpose to learn more about web programming. 
 And in the process of make a beautiful site about street graffiti.
 
